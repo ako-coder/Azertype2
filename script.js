@@ -1,35 +1,40 @@
-// --- partie 2.2 ---
-
-// const listeMots = ["Cachalot", "Pétunia", "Serviette"]
-// let score = 0
-
-// let motUtilisateur = prompt(`Entrez le mot : ${listeMots[0]}`)
-
-// if (motUtilisateur === listeMots[0]){
-//     score++
-// }
-
-// motUtilisateur = prompt(`Entrez le mot : ${listeMots[1]}`)
-
-// if (motUtilisateur === listeMots[1]){
-//     score++
-// }
-
-// motUtilisateur = prompt(`Entrez le mot : ${listeMots[1]}`)
-
-// if (motUtilisateur === listeMots[2]){
-//     score++
-// }
-    
-// console.log(`Votre score est de : ${score} sur 3`)
-
-
-
 // --- partie 2.3 ---
 
-let i=0;
 
-while(i<3){
-    console.log(i)
-    i++
+// let choixUtilisateur = prompt(`Est-ce que vous souhaitez jouer avec les ${listeChoix[0]} ou ${listeChoix[1]}`)
+
+
+// switch (choixUtilisateur) {
+//     case listeChoix[0] :
+//         for (let i = 0; i < 3; i++) {
+//             let motUtilisateur = prompt(`Entrez le mot : ${listeMots[i]}`)
+//         }
+//         break
+//     case listeChoix[1] :
+//     for (let i = 0; i < 3; i++) {
+//             let motUtilisateur = prompt(`Entrez la phrase : ${listePhrases[i]}`)
+//         }
+//         break
+// }
+
+
+// if (choixUtilisateur = listeChoix[0]){
+//     for (let i = 0; i <3; i++){
+//         let motUtilisateur = prompt(`Entrez le mot : ${listeMots[i]}`)
+//     }
+// } else {
+//     for (let i = 0; i <3; i++){
+//         let motUtilisateur = prompt(`Entrez le mot : ${listePhrases[i]}`)
+//     }
+// }
+
+
+// --- partie 2.4 --- fonctions ---
+
+function retournerMessageScore(score, nombreQuestions) {
+    let message = `Votre score est de ${score} sur ${nombreQuestions}`
+    return message
 }
+
+let nouveauMessage = retournerMessageScore(5, 10)
+console.log(nouveauMessage)
